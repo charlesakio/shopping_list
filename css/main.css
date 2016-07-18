@@ -9,4 +9,20 @@
 	color: white !important;
 }
 
+.item {
+  display: inline;
+  font-family: Quicksand;
+  font-size: 18px;
+  color: #41541;
+  position: absolute;
+  left: 60px;
+  margin-top: 13px;
+}
 
+.checkboxImage {
+  width: 25px;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  cursor: pointer;
+}
