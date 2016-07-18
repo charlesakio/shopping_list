@@ -9,6 +9,18 @@
 	color: white !important;
 }
 
+.whiteRect {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: white;
+	width: auto;
+	height: 50px;
+	border-radius 2px;
+	margin-bottom: 5px;
+	position: relative;
+}
+
 .item {
   display: inline;
   font-family: Quicksand;
@@ -19,10 +31,38 @@
   margin-top: 13px;
 }
 
+.editInput {
+	border: none;
+	width: auto;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+
+.editInput:focus {
+	outline: none;
+}
+
+.removeLink {
+	float: right;
+	height: 15px;
+	margin-top: 9px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
 .checkboxImage {
   width: 25px;
   position: absolute;
   top: 13px;
   left: 15px;
   cursor: pointer;
+}
+
+.checkImage {
+	width: 25px;
+	display: none;
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	cursor: pointer;
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>My Notes App</title>
+    <title>Shopping List App</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />  
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -13,21 +13,23 @@
 <body>
     <div id="notesPage" data-role="page">
         <div data-role="header">
-            <h1>My Notes App</h1>
+            <h1>Shopping List App</h1>
             <a href="#addNote" data-role="button" data-icon="plus" data-iconpos="notext">Add</a>
         </div>
         <br><br>
         <div role="main">
             <ul data-role="listview" id="mainList" data-inset="true">
               <li>
-                <div>
-                  <img class="checkboxImage" src="img/checkboxImage.png" alt="blank check box"> +
+                <div class="whiteRect">
+                  <img class="checkboxImage" src="img/checkboxImage.png" alt="blank check box"> 
+                  <img class="checkImage" src="img/checkImage.png" alt="checked box"> 
+		  
                   <div class="item"> test </div>
-                </li>
-                <li>
-                    note 2
-                </li>
-
+		  <a href="javascript:undefined;" class="removeLink">
+			  <img class="removeLink" src="img/removeLink.png">
+		  </a>
+		</div>
+	      </li>
             </ul>
         </div>
         <div data-role="footer" data-position="fixed">
@@ -35,7 +37,7 @@
         </div>
     </div>
     <div id="addNote" data-role="page" data-dialog="true">
-        <div data-role="header"><h1>New Note</h1></div>
+        <div data-role="header"><h1>New Item</h1></div>
         <div role="main" class="ui-content">
 
             <form>
