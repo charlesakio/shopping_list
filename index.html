@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Notes App</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />  
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="notesPage" data-role="page">
+        <div data-role="header">
+            <h1>My Notes App</h1>
+            <a href="#addNote" data-role="button" data-icon="plus" data-iconpos="notext">Add</a>
+        </div>
+        <br><br>
+        <div role="main">
+            <ul data-role="listview" id="mainList" >
+                <li>
+                    note 1
+                </li>
+                <li>
+                    note 2
+                </li>
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+
+        </div>
+    </div>
+    <div id="addNote" data-role="page" data-dialog="true">
+        <div data-role="header"><h1>New Note</h1></div>
+        <div role="main" class="ui-content">
+
+            <form>
+              <input type="text" name="note" id="newNote">
+              <input type="submit" value="Add">
+          </form>
+      </div>
+  </div>
+</body>
+</html>
